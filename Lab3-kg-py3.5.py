@@ -14,4 +14,4 @@ print(''.join( chr(ord("GO FLYERS!!!"[i]) ^ i) for i in range(0, 12)))
 print(win32api.GetVolumeInformation("C:\\")[1])
 
 # Passwrod 5 #
-print(Popen("Pass5.exe", shell=True, stdout=PIPE).communicate()[0])
+print(Popen("Pass5.exe", shell=True, stdout=PIPE).communicate()[0].decode('utf-8'))
